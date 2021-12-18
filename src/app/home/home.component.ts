@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   }
 
   getFriends(){
-    this.httpClient.get<any>('http://demo.kioskgrp.com:8080/pets').subscribe(
+    this.httpClient.get<any>('https://i8f3wzuv68.execute-api.us-east-1.amazonaws.com/devst/pets').subscribe(
       response => {
         console.log(response);
         this.friends = response;
