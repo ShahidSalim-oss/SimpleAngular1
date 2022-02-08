@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   }
 
   getFriends(){
-    this.httpClient.get<any>('http://logitive.click:8080/pets').subscribe(
+    this.httpClient.get<any>('https://logitive.click/pets').subscribe(
       response => {
         console.log(response);
         this.friends = response;
